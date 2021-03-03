@@ -3,7 +3,6 @@ import React from "react";
 import {
   SafeAreaView,
   View,
-  FlatList,
   Text,
   StatusBar,
   StyleSheet,
@@ -23,12 +22,8 @@ export default function App() {
           <Text style={styles.repository}>Repository 1</Text>
 
           <View style={styles.techsContainer}>
-            <Text style={styles.tech}>
-              ReactJS
-            </Text>
-            <Text style={styles.tech}>
-              Node.js
-            </Text>
+            <Text style={styles.tech}>ReactJS</Text>
+            <Text style={styles.tech}>Node.js</Text>
           </View>
 
           <View style={styles.likesContainer}>
@@ -59,6 +54,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#7159c1",
+    marginTop: 5,
   },
   repositoryContainer: {
     marginBottom: 15,
